@@ -7,11 +7,10 @@ window.onload = function() {
   const input = document.getElementById('file');
 
   /** くり抜き方の指定 */
-  // ctx.beginPath() ;
-  // ctx.scale(1,1.5);
-  // ctx.arc(100, 100, 80, 0 * Math.PI / 180, 360 * Math.PI / 180);
-  // ctx.clip();
-
+  ctx.beginPath() ;
+  ctx.scale(1,1.5);
+  ctx.arc(100, 100, 80, 0 * Math.PI / 180, 360 * Math.PI / 180);
+  ctx.clip();
 
   /** inputに画像を追加した時にイベントを受け取る */
   input.addEventListener('change', function(e) {
